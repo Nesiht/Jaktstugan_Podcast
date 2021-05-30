@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import headerBg from '../img/header_bg.jpg'
 
 // ################### Body ###################
+
 export const Text = styled.p`
   color: ${props => props.color || 'white'};
   font-family: 'Bodoni Moda', serif;
@@ -83,4 +84,34 @@ export const BodySection = styled.div`
   width: 80vw;
   // background-color: #607466;
   margin-top: ${props => props.marginTop || 'none'};
+`
+
+export const AuthorSection = styled.div`
+  display: flex;
+  flex-directione: row;
+  justify-content: center;
+  margin-top: 5vh;
+  // background-color: green;
+`
+
+export const AuthorCard = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40vw;
+  // background-color: lightblue;
+`
+
+export const AuthorImg = styled.img`
+  width: 8vw;
+  height: 8vw;
+  background-size: cover;
+  filter: drop-shadow(0 0 0.75rem grey);
+`
+
+export const AuthorBio = styled.div`
+  width: 90%;
+  line-height: 4vh;
+  text-align: ${props => props.align || 'left'};
+  font-weight: bold;
 `
