@@ -113,5 +113,5 @@ export const AuthorBio = styled.div`
   width: 90%;
   line-height: 4vh;
   text-align: ${props => props.align || 'left'};
-  font-weight: bold;
+  // font-weight: bold;
 `

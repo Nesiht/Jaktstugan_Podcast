@@ -27,6 +27,13 @@ export const Section = () => {
             </AuthorBio>
           </AuthorCard>
 
+
+
+
+
+
+
+
           <AuthorCard>
             <AuthorImg src={J_img} />
             <AuthorBio>
@@ -39,7 +46,6 @@ export const Section = () => {
           </AuthorCard>
 
 
-          {/* <AuthorCard>TEST</AuthorCard> */}
         </AuthorSection>
 
       </BodySection>
