@@ -3,7 +3,7 @@ import headerBg from '../img/header_bg.jpg'
 
 // ################### Body ###################
 export const Text = styled.p`
-  color: white;
+  color: ${props => props.color || 'white'};
   font-family: 'Bodoni Moda', serif;
   text-transform:  ${props => props.case || 'none'};
   letter-spacing: ${props => props.spacing || '0.4vw'};
@@ -61,4 +61,26 @@ export const Btn = styled.button`
   cursor: pointer;
   border-radius: 6px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+  &:hover {
+    background-color: #DC9E82;
+  }
+`
+// ################### Body ###################
+
+export const BodyContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: #fff;
+`
+
+export const BodySection = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80vw;
+  // background-color: #607466;
+  margin-top: ${props => props.marginTop || 'none'};
 `
