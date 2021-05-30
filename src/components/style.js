@@ -1,6 +1,15 @@
 import styled from 'styled-components'
 import headerBg from '../img/header_bg.jpg'
 
+// ################### Body ###################
+export const Text = styled.p`
+  color: white;
+  font-family: 'Bodoni Moda', serif;
+  text-transform:  ${props => props.case || 'none'};
+  letter-spacing: ${props => props.spacing || '0.4vw'};
+  font-size: ${props => props.size || '1.1rem'};
+`
+
 // ################### Header ###################
 export const Headercontainer = styled.div`
   display: flex;
@@ -36,11 +45,4 @@ export const HorizontalLine = styled.hr`
   border: 1px solid lightgrey;
 `
 
-export const Text = styled.p`
-  color: white;
-  font-family: 'Bodoni Moda', serif;
-  text-transform:  ${props => props.case || 'none'};
-  letter-spacing: 0.4vw;
-  font-size: 1.1rem;
-`
 
