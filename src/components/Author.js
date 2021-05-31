@@ -1,10 +1,10 @@
 import React from 'react'
-import { BodyContainer, BodySection,  HorizontalLine, Text, AuthorSection, AuthorCard, AuthorImg, AuthorBio } from '../components/style'
+import { BodyContainer, BodySection,  HorizontalLine, Text, AuthorSection, AuthorCard, AuthorImg, AuthorBio } from './style'
 import R_img from '../img/RT_Profil_transparent.png'
 import J_img from '../img/JT_Profil_transparent.png'
 
 
-export const Section = () => {
+export const Author = () => {
   return (
     <BodyContainer>
       <BodySection marginTop='50px'>
