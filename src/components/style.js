@@ -7,7 +7,7 @@ import headerBg from '../img/header_bg.jpg'
 
 export const StyledText = styled.p`
   font-family: 'Bodoni Moda', serif;
-  letter-spacing: 0.4vw;
+  letter-spacing: 1vw;
   font-size: 1.1rem;
   color: white;
   text-transform: uppercase;
@@ -57,13 +57,14 @@ export const Logo = styled.img`
 
 // ################### Author ###################
 
-export const AuthorSection = styled.div`
-  display: flex;
-  flex-directione: row;
-  justify-content: center;
-  margin-top: 5vh;
-  // background-color: green;
-`
+
+// export const AuthorSection = styled.div`
+//   display: flex;
+//   flex-directione: row;
+//   justify-content: center;
+//   margin-top: 5vh;
+//   // background-color: green;
+// `
 
 export const AuthorCard = styled.div`
   display: flex;
