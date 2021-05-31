@@ -9,6 +9,9 @@ export const StyledText = styled.p`
   font-family: 'Bodoni Moda', serif;
   letter-spacing: 0.4vw;
   font-size: 1.1rem;
+  color: white;
+  text-transform:  ${props => props.case || 'none'};
+  text-align: center;
 `
 
 export const RegularText = styled.p`
@@ -22,13 +25,12 @@ export const StyledSection = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-center: center;
+  justify-content: space-evenly;
   height: 100vh;
-
 `
 
 export const HorizontalLine = styled.hr`
-  width: 30vw;
+  width: 80vw;
   border: 1px solid lightgrey;
 `
 
@@ -86,14 +88,21 @@ export const AuthorBio = styled.div`
 
 // ################### Button ###################
 
+export const BtnContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
+
 export const Btn = styled.button`
   border: none;
   padding: 0px 30px 0px 38px;
   display: inline-block;
   background-color: ${props => props.bg || 'none'};
-  margin: 4px 20px;
+  margin: 10px 20px;
   cursor: pointer;
   border-radius: 6px;
+  width: 80vw;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 
   &:hover {
