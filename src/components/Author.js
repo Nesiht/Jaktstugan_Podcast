@@ -1,7 +1,7 @@
 import React from 'react'
 import { AuthorSection, RegularText, HorizontalLine, StyledText, AuthorCard, AuthorImg, AuthorBio } from './style'
 import R_img from '../img/RT_Profil_transparent.png'
-import J_img from '../img/JT_Profil_transparent.png'
+// import J_img from '../img/JT_Profil_transparent.png'
 
 
 export const Author = () => {
