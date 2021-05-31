@@ -4,7 +4,7 @@ import { Btn, StyledText } from './style'
 export const Button = (props) => {
   return (
     <Btn bg={props.bg}>
-      <StyledText case='uppercase'>{props.title}</StyledText>
+      <StyledText>{props.title}</StyledText>
     </Btn>
   )
 }

@@ -10,8 +10,9 @@ export const StyledText = styled.p`
   letter-spacing: 0.4vw;
   font-size: 1.1rem;
   color: white;
-  text-transform:  ${props => props.case || 'none'};
+  text-transform: uppercase;
   text-align: center;
+  font-weight: 600;
 `
 
 export const RegularText = styled.p`
