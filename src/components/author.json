@@ -8,5 +8,15 @@
     "name": "Jimmy Tilja",
     "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas imperdiet est in egestas condimentum. Sed condimentum dictum consectetur. Quisque sed nibh id tortor blandit semper id eget nisi. Nulla facilisis enim ac egestas placerat. Duis at malesuada odio. Sed a sollicitudin tellus. In vulputate sem at dapibus molestie. Donec nec vestibulum odio, in pellentesque metus.",
     "img": "../assets/img/JT_Profil_transparent.png"
+  },
+  {
+    "name": "Ulrika Singsted",
+    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas imperdiet est in egestas condimentum. Sed condimentum dictum consectetur. Quisque sed nibh id tortor blandit semper id eget nisi. Nulla facilisis enim ac egestas placerat. Duis at malesuada odio. Sed a sollicitudin tellus. In vulputate sem at dapibus molestie. Donec nec vestibulum odio, in pellentesque metus.",
+    "img": "../assets/img/RT_Profil_transparent.png"
+  },
+  {
+    "name": "Richard West",
+    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas imperdiet est in egestas condimentum. Sed condimentum dictum consectetur. Quisque sed nibh id tortor blandit semper id eget nisi. Nulla facilisis enim ac egestas placerat. Duis at malesuada odio. Sed a sollicitudin tellus. In vulputate sem at dapibus molestie. Donec nec vestibulum odio, in pellentesque metus.",
+    "img": "../assets/img/RT_Profil_transparent.png"
   }
 ]

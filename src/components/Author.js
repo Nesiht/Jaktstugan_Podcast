@@ -16,7 +16,7 @@ export const Author = () => {
 
       {data.map( (item) => {
         return (
-          <AuthorCard>
+          <AuthorCard key={item.name}>
           <AuthorImg src={item.img} />
           <AuthorBio>
             <RegularText>
