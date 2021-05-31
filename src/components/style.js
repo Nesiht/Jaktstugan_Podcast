@@ -18,6 +18,7 @@ export const StyledText = styled.p`
 export const RegularText = styled.p`
   font-family: 'Bodoni Moda', serif;
   font-size: 1rem;
+  text-align: center;
 `
 
 // ################### * ###################
@@ -58,12 +59,14 @@ export const Logo = styled.img`
 // ################### Author ###################
 
 export const AuthorSection = styled(StyledSection)`
-  height: auto + 10vh;
+  height: auto;
+  margin-top: 8vh;
 `
 
 export const AuthorCard = styled(StyledSection)`
   justify-content: center;
   height: auto;
+  margin: 8vh 0vh;
 `
 
 export const AuthorImg = styled.img`
