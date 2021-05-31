@@ -9,7 +9,7 @@ export const StyledText = styled.p`
   font-family: 'Bodoni Moda', serif;
   letter-spacing: 1vw;
   font-size: 1.1rem;
-  color: white;
+  color: ${props => props.color || 'white'};
   text-transform: uppercase;
   text-align: center;
   font-weight: 600;
@@ -57,6 +57,28 @@ export const Logo = styled.img`
 
 // ################### Author ###################
 
+export const AuthorSection = styled(StyledSection)`
+  height: auto + 10vh;
+`
+
+export const AuthorCard = styled(StyledSection)`
+  justify-content: center;
+  height: auto;
+`
+
+export const AuthorImg = styled.img`
+  width: 40vw;
+  height: 40vw;
+  background-size: cover;
+  filter: drop-shadow(0 0 0.75rem grey);
+`
+
+export const AuthorBio = styled.div`
+  width: 80vw;
+  line-height: 4vh;
+  text-align: ${props => props.align || 'left'};
+  // font-weight: bold;
+`
 
 // export const AuthorSection = styled.div`
 //   display: flex;
@@ -66,33 +88,23 @@ export const Logo = styled.img`
 //   // background-color: green;
 // `
 
-export const AuthorCard = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 40vw;
-  // background-color: lightblue;
-`
+// export const AuthorCard = styled.div`
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   width: 40vw;
+//   // background-color: lightblue;
+// `
 
-export const AuthorImg = styled.img`
-  width: 8vw;
-  height: 8vw;
-  background-size: cover;
-  filter: drop-shadow(0 0 0.75rem grey);
-`
 
-export const AuthorBio = styled.div`
-  width: 90%;
-  line-height: 4vh;
-  text-align: ${props => props.align || 'left'};
-  // font-weight: bold;
-`
+
+
 
 // ################### Button ###################
 
 export const BtnContainer = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: ${props => props.direction || 'column'};
   align-items: center;
 `
 
