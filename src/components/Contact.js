@@ -70,10 +70,10 @@ export const Contact = () => {
         Skicka
       </Button>
 
-      <ReCAPTCHA
+      {/* <ReCAPTCHA
         sitekey={process.env.REACT_APP_SITE_KEY}
         onChange={handleCaptcha}
-      />
+      /> */}
 
       <p>{name}</p>
       <p>{email}</p>
