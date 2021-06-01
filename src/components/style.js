@@ -31,6 +31,8 @@ export const StyledSection = styled.div`
   height: 100vh;
 `
 
+
+
 export const HorizontalLine = styled.hr`
   width: 80vw;
   border: 1px solid lightgrey;
@@ -99,8 +101,53 @@ export const AuthorBio = styled.div`
 //   // background-color: lightblue;
 // `
 
+// ################### Contact Form ###################
 
+export const Form = styled.form`
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+`
 
+export const Input = styled.input`
+  margin: 8px 0px;
+  border: 1px solid black;
+  border-radius: 0.3rem;
+  width: 80vw;
+  padding: 0.7rem 0rem 0.7rem 0.7rem;
+  font-size: 1rem;
+`
+
+export const Textarea = styled.textarea`
+  margin: 8px 0px;
+  border: 1px solid black;
+  border-radius: 0.3rem;
+  width: 80vw;
+  height: 20vh;
+  resize: none;
+  font-size: 1rem;
+  padding: 0.7rem 0rem 0.7rem 0.7rem;
+`
+
+export const Button = styled.button`
+  padding: 8px;
+  margin: 8px 0px;
+  width: 80vw;
+`
+
+export const FormContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  // text-align: right;
+  width: 80vw;
+`
+
+export const StyledLabel = styled.label`
+  text-align: left;
+  width: 80vw;
+`
 
 
 // ################### Button ###################
