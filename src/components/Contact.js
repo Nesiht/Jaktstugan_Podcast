@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
+import ReCAPTCHA from 'react-google-recaptcha'
 import { Form, Input, Textarea, FormContainer, StyledLabel, HorizontalLine, StyledText, SectionTitleContainer } from './style'
 import { Button } from './Button'
+require('dotenv').config()
 
 export const Contact = () => {
   const [count, setCount] = useState(10);
@@ -8,15 +10,23 @@ export const Contact = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleLogin = (event) => {
+  const handleSubmit = (event) => {
     event.preventDefault();
     setName("");
     setEmail("");
     setMessage("");
   };
 
+  const handleCaptcha = (value) => {
+    console.log("captcha value:", value)
+  }
+  
+
+
+
+
   return (
-    <Form onSubmit={(e) => handleLogin(e)}>
+    <Form onSubmit={(e) => handleSubmit(e)}>
 
       <SectionTitleContainer>
         <HorizontalLine />
@@ -59,6 +69,11 @@ export const Contact = () => {
       <Button title='Skicka' bg='#343E3D' type="submit" onClick={() => setCount(count + 1)}>
         Skicka
       </Button>
+
+      <ReCAPTCHA
+        sitekey={process.env.REACT_APP_SITE_KEY}
+        onChange={handleCaptcha}
+      />
 
       <p>{name}</p>
       <p>{email}</p>
