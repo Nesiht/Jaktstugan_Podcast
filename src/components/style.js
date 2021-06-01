@@ -86,22 +86,6 @@ export const AuthorBio = styled.div`
   // font-weight: bold;
 `
 
-// export const AuthorSection = styled.div`
-//   display: flex;
-//   flex-directione: row;
-//   justify-content: center;
-//   margin-top: 5vh;
-//   // background-color: green;
-// `
-
-// export const AuthorCard = styled.div`
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   width: 40vw;
-//   // background-color: lightblue;
-// `
-
 // ################### Contact Form ###################
 
 export const Form = styled.form`
@@ -114,22 +98,24 @@ export const Form = styled.form`
 
 export const Input = styled.input`
   margin: 8px 0px;
-  border: 1px solid #607466;
+  border: 1px solid #DC9E82;
   border-radius: 0.3rem;
   width: 80vw;
   padding: 0.7rem 0rem 0.7rem 0.7rem;
   font-size: 1rem;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 `
 
 export const Textarea = styled.textarea`
   margin: 8px 0px;
-  border: 1px solid #607466;
+  border: 1px solid #DC9E82;
   border-radius: 0.3rem;
   width: 80vw;
   height: 20vh;
   resize: none;
   font-size: 1rem;
   padding: 0.7rem 0rem 0.7rem 0.7rem;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 `
 
 export const Button = styled.button`
