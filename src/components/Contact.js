@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Form, Input, Textarea, FormContainer, StyledLabel } from './style'
+import { Form, Input, Textarea, FormContainer, StyledLabel, HorizontalLine, StyledText, SectionTitleContainer } from './style'
 import { Button } from './Button'
 
 export const Contact = () => {
@@ -17,6 +17,13 @@ export const Contact = () => {
 
   return (
     <Form onSubmit={(e) => handleLogin(e)}>
+
+      <SectionTitleContainer>
+        <HorizontalLine />
+          <StyledText color='black'>Kontakta oss.</StyledText>
+        <HorizontalLine />
+      </SectionTitleContainer>
+
       <StyledLabel for="name">Namn</StyledLabel>
       <Input
         id="name"
@@ -49,7 +56,7 @@ export const Contact = () => {
         maxLength="200"
       ></Textarea>
 
-      <Button title='Skicka' bg='#607466' type="submit" onClick={() => setCount(count + 1)}>
+      <Button title='Skicka' bg='#343E3D' type="submit" onClick={() => setCount(count + 1)}>
         Skicka
       </Button>
 

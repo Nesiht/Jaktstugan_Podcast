@@ -31,7 +31,9 @@ export const StyledSection = styled.div`
   height: 100vh;
 `
 
-
+export const SectionTitleContainer = styled.div`
+  margin: 4vh 0vh;
+`
 
 export const HorizontalLine = styled.hr`
   width: 80vw;
@@ -62,7 +64,6 @@ export const Logo = styled.img`
 
 export const AuthorSection = styled(StyledSection)`
   height: auto;
-  margin-top: 8vh;
 `
 
 export const AuthorCard = styled(StyledSection)`
@@ -108,11 +109,12 @@ export const Form = styled.form`
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+  background-color: #607466;
 `
 
 export const Input = styled.input`
   margin: 8px 0px;
-  border: 1px solid black;
+  border: 1px solid #607466;
   border-radius: 0.3rem;
   width: 80vw;
   padding: 0.7rem 0rem 0.7rem 0.7rem;
@@ -121,7 +123,7 @@ export const Input = styled.input`
 
 export const Textarea = styled.textarea`
   margin: 8px 0px;
-  border: 1px solid black;
+  border: 1px solid #607466;
   border-radius: 0.3rem;
   width: 80vw;
   height: 20vh;
