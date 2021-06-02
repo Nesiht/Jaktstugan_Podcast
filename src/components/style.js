@@ -86,6 +86,63 @@ export const AuthorBio = styled.div`
   // font-weight: bold;
 `
 
+
+export const Container = styled.div`
+  display: flex;
+  justify-content: center;
+`
+
+export const Card = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 480px;
+  background-color: white;
+  box-shadow: 0px 1px 10px 1px black;
+  border-radius: 8px;
+  margin: 8vh 0vh;
+`
+
+export const Uppdercontainer = styled.div`
+  height: 100px;
+  background: linear-gradient(to left, #607466, #343e3d);
+  border-radius: 8px 8px 0px 0px;
+`
+
+export const Lowercontainer = styled.div`
+  margin-top: 60px;
+  text-align: center;
+`
+
+export const ImageContainer = styled.div`
+  background-color: white;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding: 5px;
+  transform: translate(95px, 45px);
+  border: 2px solid #607466;
+  box-sizing: content-box;
+`
+
+export const Image = styled.img`
+  width: 100px;
+  height: 100px;
+`
+
+export const StyledH3 = styled.h3`
+  font-family: "Lato", sans-serif;
+`
+
+export const StyledH2 = styled.h2`
+  font-family: "Mate SC", serif;
+`
+
+export const Paragraph = styled.p`
+  margin: 0px 15px;
+  font-family: "Lato", sans-serif;
+`
+
 // ################### Contact Form ###################
 
 export const Form = styled.form`
