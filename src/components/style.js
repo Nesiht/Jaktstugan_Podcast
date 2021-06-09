@@ -66,29 +66,9 @@ export const AuthorSection = styled(StyledSection)`
   height: auto;
 `
 
-export const AuthorCard = styled(StyledSection)`
-  justify-content: center;
-  height: auto;
-  margin: 8vh 0vh;
-`
-
-export const AuthorImg = styled.img`
-  width: 40vw;
-  height: 40vw;
-  background-size: cover;
-  filter: drop-shadow(0 0 0.75rem grey);
-`
-
-export const AuthorBio = styled.div`
-  width: 80vw;
-  line-height: 4vh;
-  text-align: ${props => props.align || 'left'};
-  // font-weight: bold;
-`
-
-
 export const Container = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
 `
 
@@ -103,13 +83,13 @@ export const Card = styled.div`
   margin: 8vh 0vh;
 `
 
-export const Uppdercontainer = styled.div`
+export const UpperContainer = styled.div`
   height: 100px;
   background: linear-gradient(to left, #607466, #343e3d);
   border-radius: 8px 8px 0px 0px;
 `
 
-export const Lowercontainer = styled.div`
+export const LowerContainer = styled.div`
   margin-top: 60px;
   text-align: center;
 `
@@ -128,6 +108,7 @@ export const ImageContainer = styled.div`
 export const Image = styled.img`
   width: 100px;
   height: 100px;
+  border-radius: 50%;
 `
 
 export const StyledH3 = styled.h3`
@@ -141,6 +122,26 @@ export const StyledH2 = styled.h2`
 export const Paragraph = styled.p`
   margin: 0px 15px;
   font-family: "Lato", sans-serif;
+`
+
+// ################### Support ###################
+
+export const SupportSection = styled(StyledSection)`
+  height: auto;
+`
+
+export const SupportCard = styled(Card)`
+  height: 240px;
+  border-radius: 2px;
+  border: 1px solid #607466;
+  box-shadow: none;
+`
+
+export const SupUpperContainer = styled.div`
+  height: 120px;
+  border-radius: 0px;
+  background: none;
+  background-color: #607466;
 `
 
 // ################### Contact Form ###################
