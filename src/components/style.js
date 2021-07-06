@@ -1,6 +1,9 @@
 import styled from 'styled-components'
 import headerBg from '../img/header_bg.jpg'
 
+// TEST
+import patreon from '../img/island_small.jpg'
+
 
 
 // ################### Fonts ###################
@@ -131,17 +134,41 @@ export const SupportSection = styled(StyledSection)`
 `
 
 export const SupportCard = styled(Card)`
-  height: 240px;
+  height: auto;
   border-radius: 2px;
-  border: 1px solid #607466;
+  // border: 1px solid #607466;
   box-shadow: none;
 `
 
 export const SupUpperContainer = styled.div`
-  height: 120px;
-  border-radius: 0px;
+  // height: 120px;
+  // border-radius: 0px;
   background: none;
   background-color: #607466;
+  text-align: center;
+`
+
+export const SupImage = styled.div`
+  // width: 280px;
+  height: 200px;
+  background-image: url(${patreon});
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+`
+
+export const SupLowerContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // text-align: center;
+`
+
+export const SupUl = styled.ul`
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 `
 
 // ################### Contact Form ###################
