@@ -1,10 +1,6 @@
 import styled from 'styled-components'
 import headerBg from '../img/header_bg.jpg'
 
-// TEST
-import patreon from '../img/island_small.jpg'
-
-
 
 // ################### Fonts ###################
 
