@@ -88,8 +88,13 @@ export const Card = styled.div`
 
 export const UpperContainer = styled.div`
   height: 100px;
-  background: linear-gradient(to left, #607466, #343e3d);
+  // background: linear-gradient(to left, #607466, #343e3d);
   border-radius: 8px 8px 0px 0px;
+
+  background-image: url(${props => props.bg || 'none'});
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 `
 
 export const LowerContainer = styled.div`
@@ -133,42 +138,20 @@ export const SupportSection = styled(StyledSection)`
   height: auto;
 `
 
-export const SupportCard = styled(Card)`
-  height: auto;
-  border-radius: 2px;
-  // border: 1px solid #607466;
-  box-shadow: none;
-`
-
-export const SupUpperContainer = styled.div`
-  // height: 120px;
-  // border-radius: 0px;
-  background: none;
-  background-color: #607466;
-  text-align: center;
-`
-
-export const SupImage = styled.div`
-  // width: 280px;
-  height: 200px;
-  background-image: url(${patreon});
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-`
-
-export const SupLowerContainer = styled.div`
+export const SmallCard = styled.div`
+  height: 12vh;
+  width: 70vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  // text-align: center;
-`
-
-export const SupUl = styled.ul`
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin: 5vw 0vw;
+  background-image: url(${props => props.bg || 'none'});
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 2px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 `
 
 // ################### Contact Form ###################

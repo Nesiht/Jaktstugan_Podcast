@@ -20,7 +20,7 @@ export const Author = () => {
         {data.map( (item ) => {
             return (
               <Card key={item.name}>
-                <UpperContainer>
+                <UpperContainer bg={item.bg}>
                   <ImageContainer>
                     <Image src={item.img} />
                   </ImageContainer>

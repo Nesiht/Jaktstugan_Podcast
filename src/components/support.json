@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Webshop",
+    "img": "../assets/img/nature_1.jpg",
+    "linkUrl": "https://google.se"
+  },
+  {
+    "title": "Patreon",
+    "img": "../assets/img/nature_2.jpg",
+    "linkUrl": "https://google.se"
+  },
+  {
+    "title": "Swish",
+    "img": "../assets/img/nature_3.jpg",
+    "linkUrl": "https://google.se"
+  },
+  {
+    "title": "Krypto",
+    "img": "../assets/img/nature_4.jpg",
+    "linkUrl": "https://google.se"
+  },
+  {
+    "title": "Ramsele",
+    "img": "../assets/img/nature_5.jpg",
+    "linkUrl": "https://google.se"
+  }
+]
