@@ -3,6 +3,7 @@ import { Header } from './components/Header'
 import { Author } from './components/Author'
 import { Contact } from './components/Contact'
 import { Support } from './components/Support'
+import { Listen } from './components/Listen'
 
 export const App = () => {
   return (
@@ -10,6 +11,7 @@ export const App = () => {
       <Header />
       <Author />
       <Support />
+      <Listen />
       <Contact />
     </>
   );

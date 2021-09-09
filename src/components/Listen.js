@@ -1,21 +1,19 @@
 import React from 'react'
-import { SupportSection, SectionTitleContainer, HorizontalLine, StyledText, StyledA } from './style'
-// TEST STYLES
+import { SupportSection, SectionTitleContainer, HorizontalLine, StyledText, StyledA} from './style'
+
 import { SmallCard } from './style'
-import data from './support.json'
+import data from './listen.json'
 
-
-export const Support = () => {
+export const Listen = () => {
   return (
     <SupportSection>
-
       <SectionTitleContainer>
         <HorizontalLine />
-          <StyledText color='black'>Stöd Podden.</StyledText>
+          <StyledText color='black'>Lyssna på podden</StyledText>
         <HorizontalLine />
       </SectionTitleContainer>
 
-      {data.map( ( item ) => {
+      {data.map(item => {
         if ( item.visible ) {
           return (
           <StyledA href={item.linkUrl} target="_blank" key={item.title}>

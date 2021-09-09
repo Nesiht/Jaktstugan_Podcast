@@ -8,7 +8,7 @@
   {
     "title": "Patreon",
     "img": "../assets/img/nature_2.jpg",
-    "linkUrl": "https://google.se",
+    "linkUrl": "https://www.patreon.com/jaktstuganpodcast",
     "visible": true
   },
   {
@@ -18,15 +18,21 @@
     "visible": false
   },
   {
-    "title": "Krypto",
-    "img": "../assets/img/nature_4.jpg",
-    "linkUrl": "https://google.se",
+    "title": "Remsle",
+    "img": "../assets/img/nature_5.jpg",
+    "linkUrl": "https://remsle.com/",
+    "visible": true
+  },
+  {
+    "title": "Instagram",
+    "img": "../assets/img/nature_3.jpg",
+    "linkUrl": "https://www.instagram.com/jaktstugan_podcast/",
     "visible": false
   },
   {
-    "title": "Ramsele",
-    "img": "../assets/img/nature_5.jpg",
+    "title": "Youtube",
+    "img": "../assets/img/nature_4.jpg",
     "linkUrl": "https://google.se",
-    "visible": true
+    "visible": false
   }
 ]

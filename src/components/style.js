@@ -38,6 +38,9 @@ export const HorizontalLine = styled.hr`
   width: 80vw;
   border: 1px solid lightgrey;
 `
+export const StyledA = styled.a`
+  text-decoration: none;
+`
 
 // ################### Header ###################
 
