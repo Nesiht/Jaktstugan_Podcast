@@ -15,12 +15,14 @@ export const Support = () => {
         <HorizontalLine />
       </SectionTitleContainer>
 
-      {data.map( (item ) => {
-        return (
+      {data.map( ( item ) => {
+        if ( item.visible ) {
+          return (
           <SmallCard key={item.title} bg={item.img}>
             <StyledText>{item.title}</StyledText>
           </SmallCard>
-        )
+          )
+        }
       })}
 
     </SupportSection>

@@ -34,7 +34,7 @@ export const Contact = () => {
         <HorizontalLine />
       </SectionTitleContainer>
 
-      <StyledLabel for="name">Namn</StyledLabel>
+      <StyledLabel htmlFor="name">Namn</StyledLabel>
       <Input
         id="name"
         placeholder="Namn"
@@ -43,7 +43,7 @@ export const Contact = () => {
         required
       ></Input>
 
-      <StyledLabel for="email">Epost</StyledLabel>
+      <StyledLabel htmlFor="email">Epost</StyledLabel>
       <Input
         id="email"
         placeholder="Epost"
@@ -53,7 +53,7 @@ export const Contact = () => {
       ></Input>
       
       <FormContainer>
-        <StyledLabel for="message">Meddelande</StyledLabel>
+        <StyledLabel htmlFor="message">Meddelande</StyledLabel>
         {message.length}/200
       </FormContainer>
 
