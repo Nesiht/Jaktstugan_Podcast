@@ -21,7 +21,6 @@ Remsle: https://remsle.com/
 Spotify: https://open.spotify.com/show/1I7sB6okWbjCJJv4H5jRuD
 Soundcloud: https://soundcloud.com/rickard-kuhs-thorstroem
 
-1. Ersätta Listen & Support componenter med en ny som kan användas på båda.
-2. En component som gör en paralax effekt på en bild när man scrollar
+2. En component som gör en parallax effekt på en bild när man scrollar
 3. Fixa länkarna, området för länken är större än knappar/bilder
 4. Kolla på callback funktion på knapparna på Header.js istället för <A href>

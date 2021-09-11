@@ -82,7 +82,7 @@ export const Card = styled.div`
   background-color: white;
   box-shadow: 0px 1px 10px 1px black;
   border-radius: 8px;
-  margin: 8vh 0vh;
+  margin: 4vh 0vh;
 `
 
 export const UpperContainer = styled.div`

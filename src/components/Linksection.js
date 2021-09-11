@@ -1,8 +1,7 @@
 import React from 'react'
-import { SupportSection, SectionTitleContainer, HorizontalLine, StyledText, StyledA} from './style'
+import { SupportSection, SectionTitleContainer, HorizontalLine, StyledText, StyledA } from './style'
 import { SmallCard } from './style'
 
-// Mounta denna component med json fil och en titel.
 
 export const Linksection = (props) => {
   return (
