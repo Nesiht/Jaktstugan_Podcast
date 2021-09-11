@@ -7,8 +7,8 @@ import { Parallax } from 'react-parallax'
 export const ParallaxSection = (props) => {
   return (
     <Parallax bgImage={props.img} style={{
-      height: '10vh',
+      height: '15vh',
       }}
-      strength={200} />
+      strength={100} />
   )
 }
