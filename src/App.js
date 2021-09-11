@@ -2,16 +2,18 @@ import './App.css';
 import { Header } from './components/Header'
 import { Author } from './components/Author'
 import { Contact } from './components/Contact'
-import { Support } from './components/Support'
-import { Listen } from './components/Listen'
+import { Linksection } from './components/Linksection'
+
+import supportData from './components/support.json'
+import listenData from './components/listen.json'
 
 export const App = () => {
   return (
     <>
       <Header />
       <Author />
-      <Support />
-      <Listen />
+      <Linksection title="Stöd podden." data={supportData}/>
+      <Linksection title="Lyssna på podden." data={listenData}/>
       <Contact />
     </>
   );

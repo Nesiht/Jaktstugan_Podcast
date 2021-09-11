@@ -1,21 +1,19 @@
 import React from 'react'
-import { SupportSection, SectionTitleContainer, HorizontalLine, StyledText, StyledA } from './style'
-// TEST STYLES
+import { SupportSection, SectionTitleContainer, HorizontalLine, StyledText, StyledA} from './style'
 import { SmallCard } from './style'
-import data from './support.json'
 
+// Mounta denna component med json fil och en titel.
 
-export const Support = () => {
+export const Linksection = (props) => {
   return (
     <SupportSection>
-
       <SectionTitleContainer>
         <HorizontalLine />
-          <StyledText color='black'>Stöd Podden.</StyledText>
+          <StyledText color='black'>{props.title}</StyledText>
         <HorizontalLine />
       </SectionTitleContainer>
 
-      {data.map( ( item ) => {
+      {props.data.map(item => {
         if ( item.visible ) {
           return (
           <StyledA href={item.linkUrl} target="_blank" key={item.title}>
