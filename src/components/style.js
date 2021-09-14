@@ -78,7 +78,7 @@ export const Card = styled.div`
   display: flex;
   flex-direction: column;
   width: 300px;
-  height: 480px;
+  // height: 480px;
   background-color: white;
   box-shadow: 0px 1px 10px 1px black;
   border-radius: 8px;
@@ -99,6 +99,7 @@ export const UpperContainer = styled.div`
 export const LowerContainer = styled.div`
   margin-top: 60px;
   text-align: center;
+  margin-bottom: 2vh;
 `
 
 export const ImageContainer = styled.div`
