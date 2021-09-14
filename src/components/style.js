@@ -130,6 +130,7 @@ export const StyledH2 = styled.h2`
 export const Paragraph = styled.p`
   margin: 0px 15px;
   font-family: "Lato", sans-serif;
+  line-height: 1.5;
 `
 
 // ################### Support ###################
