@@ -7,6 +7,7 @@ import { ParallaxSection } from './components/ParallaxSection'
 
 import supportData from './components/support.json'
 import listenData from './components/listen.json'
+import partnerData from './components/partner.json'
 
 export const App = () => {
   return (
@@ -16,6 +17,7 @@ export const App = () => {
       <ParallaxSection img='./assets/img/nature_2.jpg' />
       <Linksection title="Stöd podden." data={supportData}/>
       <Linksection title="Lyssna på podden." data={listenData}/>
+      <Linksection title="Partners." data={partnerData}/>
       <ParallaxSection img='./assets/img/nature_4.jpg' />
       <Contact />
     </>

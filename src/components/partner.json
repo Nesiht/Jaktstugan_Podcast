@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Remsle",
+    "img": "../assets/img/nature_5.jpg",
+    "linkUrl": "https://remsle.com/",
+    "visible": true
+  },
+  {
+    "title": "BOAR CANDY",
+    "img": "../assets/img/nature_3.jpg",
+    "linkUrl": "https://boarcandy.se/",
+    "visible": true
+  }
+]
