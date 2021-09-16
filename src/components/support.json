@@ -34,5 +34,11 @@
     "img": "../assets/img/nature_4.jpg",
     "linkUrl": "https://google.se",
     "visible": false
+  },
+  {
+    "title": "BOAR CANDY",
+    "img": "../assets/img/nature_3.jpg",
+    "linkUrl": "https://boarcandy.se/",
+    "visible": true
   }
 ]

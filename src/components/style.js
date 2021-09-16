@@ -104,19 +104,19 @@ export const LowerContainer = styled.div`
 
 export const ImageContainer = styled.div`
   background-color: white;
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
-  padding: 5px;
-  transform: translate(95px, 45px);
+  // padding: 5px;
+  transform: translate(90px, 35px);
   border: 2px solid #607466;
   box-sizing: content-box;
+  overflow: hidden;
 `
 
 export const Image = styled.img`
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+  width: 100%;
+  height: auto;
 `
 
 export const StyledH3 = styled.h3`
