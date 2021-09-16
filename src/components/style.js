@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import headerBg from '../img/header_bg.jpg'
+import headerBg from '../img/_MGF2156_L.jpg'
 
 
 // ################### Fonts ###################
@@ -109,7 +109,7 @@ export const ImageContainer = styled.div`
   border-radius: 50%;
   // padding: 5px;
   transform: translate(90px, 35px);
-  border: 2px solid #607466;
+  border: 2px solid #fff;
   box-sizing: content-box;
   overflow: hidden;
 `
