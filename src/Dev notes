@@ -9,11 +9,15 @@ Sektioner:
 Header
 Vilka är Vi
 Stöd podden
-  Länkar: Patreon, Webshop, Ramsele, Donation/Swish, Instagram, Youtube
+  Länkar: Patreon, Webshop, Donation/Swish, Instagram, Youtube
 Lyssa på podden 
   Länkar: Spotify, soundcloud, din poddapp
+Partners
+  Remsle, Boar Candy
 Bilder / bildspel? 
 Kontakta oss
+Footer
+
 
 Patreon: https://www.patreon.com/jaktstuganpodcast
 Instagram: https://www.instagram.com/jaktstugan_podcast/
@@ -21,6 +25,12 @@ Remsle: https://remsle.com/
 Spotify: https://open.spotify.com/show/1I7sB6okWbjCJJv4H5jRuD
 Soundcloud: https://soundcloud.com/rickard-kuhs-thorstroem
 
-2. En component som gör en parallax effekt på en bild när man scrollar
-3. Fixa länkarna, området för länken är större än knappar/bilder
-4. Kolla på callback funktion på knapparna på Header.js istället för <A href>
+6. få igång captchan till formuläret
+7. har richard köpt en www adress?
+8. Hur gör jag enklast en bekräftelse till användaren att dom har skickat mail, typ "Tack för ditt mail"
+
+
+EmailJS konto
+ANV: jaktstuganpodcast@gmail.com
+LÖS: dP2v?_K9dSgacVi
+2021-09-18: Glöm inte logga in och ändra från min personliga mail till deras.

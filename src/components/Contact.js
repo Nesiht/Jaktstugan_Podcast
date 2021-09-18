@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { send } from 'emailjs-com'
 import ReCAPTCHA from 'react-google-recaptcha'
 import { Form, Input, Textarea, FormContainer, StyledLabel, HorizontalLine, StyledText, SectionTitleContainer } from './style'
 import { Button } from './Button'
@@ -6,15 +7,37 @@ require('dotenv').config()
 
 export const Contact = () => {
   const [count, setCount] = useState(10);
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+
+  const [toSend, setToSend] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
+
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    setName("");
-    setEmail("");
-    setMessage("");
+    send(
+      process.env.REACT_APP_SERVICE_ID,
+      process.env.REACT_APP_TEMPLATE_ID,
+      toSend,
+      process.env.REACT_APP_USER_ID
+    )
+      .then((response) => {
+        console.log('SUCCESS!', response.status, response.text);
+        setToSend({ ...toSend, 
+          name: '',
+          email: '',
+          message: '',
+         });
+      })
+      .catch((err) => {
+        console.log('FAILED...', err);
+      });
+  };
+
+  const handleChange = (e) => {
+    setToSend({ ...toSend, [e.target.name]: e.target.value });
   };
 
   const handleCaptcha = (value) => {
@@ -37,31 +60,34 @@ export const Contact = () => {
       <StyledLabel htmlFor="name">Namn</StyledLabel>
       <Input
         id="name"
+        name="name"
         placeholder="Namn"
         type="text"
-        onChange={(event) => setName(event.target.value)}
+        onChange={handleChange}
         required
       ></Input>
 
       <StyledLabel htmlFor="email">Epost</StyledLabel>
       <Input
         id="email"
+        name="email"
         placeholder="Epost"
         type="email"
-        onChange={(event) => setEmail(event.target.value)}
+        onChange={handleChange}
         required
       ></Input>
       
       <FormContainer>
         <StyledLabel htmlFor="message">Meddelande</StyledLabel>
-        {message.length}/200
+        {toSend.message.length}/200
       </FormContainer>
 
       <Textarea
         id="message"
+        name="message"
         placeholder="Meddelande"
         type="text"
-        onChange={(event) => setMessage(event.target.value)}
+        onChange={handleChange}
         required
         maxLength="200"
       ></Textarea>
@@ -75,9 +101,9 @@ export const Contact = () => {
         onChange={handleCaptcha}
       />
 
-      <p>{name}</p>
-      <p>{email}</p>
-      <p>{message}</p>
+      <p>{process.env.REACT_APP_SERVICE_ID}</p>
+      <p>{toSend.email}</p>
+      <p>{toSend.message}</p>
     </Form>
   )
 }
