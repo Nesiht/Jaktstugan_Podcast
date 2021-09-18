@@ -6,8 +6,6 @@ import { Button } from './Button'
 require('dotenv').config()
 
 export const Contact = () => {
-  const [count, setCount] = useState(10);
-
   const [toSend, setToSend] = useState({
     name: '',
     email: '',
@@ -92,7 +90,7 @@ export const Contact = () => {
         maxLength="200"
       ></Textarea>
 
-      <Button title='Skicka' bg='#343E3D' type="submit" onClick={() => setCount(count + 1)}>
+      <Button title='Skicka' bg='#343E3D' type="submit">
         Skicka
       </Button>
 
@@ -100,10 +98,6 @@ export const Contact = () => {
         sitekey={process.env.REACT_APP_SITE_KEY}
         onChange={handleCaptcha}
       />
-
-      <p>{process.env.REACT_APP_SERVICE_ID}</p>
-      <p>{toSend.email}</p>
-      <p>{toSend.message}</p>
     </Form>
   )
 }
