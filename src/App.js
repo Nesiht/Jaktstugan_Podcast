@@ -14,11 +14,11 @@ export const App = () => {
     <>
       <Header />
       <Author />
-      <ParallaxSection img='./assets/img/test_img/_MGF2170_M.jpg' />
+      <ParallaxSection img='./assets/img/_MGF2170_M.webp' />
       <Linksection title="Stöd podden." data={supportData}/>
       <Linksection title="Lyssna på podden." data={listenData}/>
       <Linksection title="Partners." data={partnerData}/>
-      <ParallaxSection img='./assets/img/test_img/_MGF2188_M.jpg' />
+      <ParallaxSection img='./assets/img/_MGF2188_M.webp' />
       <Contact />
     </>
   );

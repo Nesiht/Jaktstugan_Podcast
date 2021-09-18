@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import headerBg from '../img/_MGF2156_L.jpg'
+import headerBg from '../img/_MGF2156_L.webp'
 import { Parallax } from 'react-parallax'
 
 
@@ -157,6 +157,10 @@ export const Paragraph = styled.p`
 export const SyledParSection = styled(StyledSection)`
   display: block;
   height: 30vh;
+
+  @media (min-width: 1920px) {
+    height: 40vh;
+  }
 `
 export const StyledParallax = styled(Parallax)`
   height: 100%;

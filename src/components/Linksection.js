@@ -15,7 +15,7 @@ export const Linksection = (props) => {
       {props.data.map(item => {
         if ( item.visible ) {
           return (
-          <StyledA href={item.linkUrl} target="_blank" key={item.title}>
+          <StyledA href={item.linkUrl} target="_blank" key={item.title} rel="noopener">
             <SmallCard bg={item.img}>
               <StyledText>{item.title}</StyledText>
             </SmallCard>
