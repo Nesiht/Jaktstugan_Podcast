@@ -10,11 +10,12 @@ export const Contact = () => {
     name: '',
     email: '',
     message: '',
-  });
+  })
+  const [emailSent, setEmailSent] =useState(false)
 
 
   const handleSubmit = (event) => {
-    event.preventDefault();
+    event.preventDefault()
     send(
       process.env.REACT_APP_SERVICE_ID,
       process.env.REACT_APP_TEMPLATE_ID,
@@ -22,31 +23,31 @@ export const Contact = () => {
       process.env.REACT_APP_USER_ID
     )
       .then((response) => {
-        console.log('SUCCESS!', response.status, response.text);
+        console.log('SUCCESS!', response.status, response.text)
         setToSend({ ...toSend, 
           name: '',
           email: '',
           message: '',
-         });
+         })
+         setEmailSent(true)
       })
       .catch((err) => {
-        console.log('FAILED...', err);
-      });
-  };
+        console.log('FAILED...', err)
+      })
+  }
 
   const handleChange = (e) => {
-    setToSend({ ...toSend, [e.target.name]: e.target.value });
-  };
+    setToSend({ ...toSend, [e.target.name]: e.target.value })
+  }
 
   const handleCaptcha = (value) => {
     console.log("captcha value:", value)
   }
-  
-
-
 
 
   return (
+    <>
+    {!emailSent && 
     <Form onSubmit={(e) => handleSubmit(e)}>
 
       <SectionTitleContainer>
@@ -98,6 +99,18 @@ export const Contact = () => {
         sitekey={process.env.REACT_APP_SITE_KEY}
         onChange={handleCaptcha}
       />
+    </Form>    
+    }
+
+    {emailSent && 
+    <Form>
+      <SectionTitleContainer>
+        <HorizontalLine />
+          <StyledText color='black'>Tack för ditt mail!</StyledText>
+        <HorizontalLine />
+      </SectionTitleContainer>
     </Form>
+    }
+    </>
   )
 }
