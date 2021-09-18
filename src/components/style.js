@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import headerBg from '../img/_MGF2156_L.jpg'
+import { Parallax } from 'react-parallax'
 
 
 // ################### Fonts ###################
@@ -38,9 +39,6 @@ export const HorizontalLine = styled.hr`
   width: 80vw;
   border: 1px solid lightgrey;
 `
-export const StyledA = styled.a`
-  text-decoration: none;
-`
 
 // ################### Header ###################
 
@@ -60,8 +58,6 @@ export const Logo = styled.img`
 `
 
 
-
-
 // ################### Author ###################
 
 export const AuthorSection = styled(StyledSection)`
@@ -72,13 +68,18 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100vw;
+  }
 `
 
 export const Card = styled.div`
   display: flex;
   flex-direction: column;
   width: 300px;
-  // height: 480px;
   background-color: white;
   box-shadow: 0px 1px 10px 1px black;
   border-radius: 8px;
@@ -133,7 +134,17 @@ export const Paragraph = styled.p`
   line-height: 1.5;
 `
 
-// ################### Support ###################
+// ################### Parallax ###################
+
+export const SyledParSection = styled(StyledSection)`
+  display: block;
+  height: 20vh;
+`
+export const StyledParallax = styled(Parallax)`
+  height: 100%;
+`
+
+// ################### Linksection ###################
 
 export const SupportSection = styled(StyledSection)`
   height: auto;
@@ -144,15 +155,19 @@ export const SmallCard = styled.div`
   width: 70vw;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  margin: 5vw 0vw;
   background-image: url(${props => props.bg || 'none'});
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   border-radius: 2px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+`
+
+export const StyledA = styled.a`
+  text-decoration: none;
+  margin: 5vw 0vw;
 `
 
 // ################### Contact Form ###################

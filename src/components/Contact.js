@@ -91,14 +91,15 @@ export const Contact = () => {
         maxLength="200"
       ></Textarea>
 
-      <Button title='Skicka' bg='#343E3D' type="submit">
-        Skicka
-      </Button>
-
       <ReCAPTCHA
         sitekey={process.env.REACT_APP_SITE_KEY}
         onChange={handleCaptcha}
       />
+
+      <Button title='Skicka' bg='#343E3D' type="submit">
+        Skicka
+      </Button>
+
     </Form>    
     }
 

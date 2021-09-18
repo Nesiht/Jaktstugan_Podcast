@@ -1,8 +1,6 @@
 import React from 'react'
 import { AuthorSection, HorizontalLine, StyledText, SectionTitleContainer } from './style'
 import { Container, Card, UpperContainer, LowerContainer, ImageContainer, Image, StyledH3, StyledH2, Paragraph } from './style'
-// import R_img from '../img/RT_Profil_transparent.png'
-// import J_img from '../img/JT_Profil_transparent.png'
 import data from './author.json'
 
 

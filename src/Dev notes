@@ -5,6 +5,10 @@
 375×667 (3.75%)
 360×640 (7.28%)
 
+  @media (max-width: 768px) {
+
+  }
+
 Sektioner:
 Header
 Vilka är Vi
@@ -28,7 +32,6 @@ Soundcloud: https://soundcloud.com/rickard-kuhs-thorstroem
 6. få igång captchan till formuläret 
 (https://www.emailjs.com/docs/user-guide/adding-captcha-verification/)
 7. har richard köpt en www adress?
-8. Hur gör jag enklast en bekräftelse till användaren att dom har skickat mail, typ "Tack för ditt mail"
 
 
 EmailJS konto
