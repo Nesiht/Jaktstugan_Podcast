@@ -16,10 +16,8 @@ export const Header = () => {
       </SectionTitleContainer>
       
       <BtnContainer>
-        
         <Button title='Patreon' bg='#607466' destination="https://www.patreon.com/jaktstuganpodcast" />
         <Button title='Lyssna' bg='#343E3D' destination="https://open.spotify.com/show/1I7sB6okWbjCJJv4H5jRuD" />
-
       </BtnContainer>
     </StyledHeader>
   )

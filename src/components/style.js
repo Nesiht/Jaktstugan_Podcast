@@ -38,6 +38,14 @@ export const SectionTitleContainer = styled.div`
 export const HorizontalLine = styled.hr`
   width: 80vw;
   border: 1px solid lightgrey;
+
+  @media (min-width: 1366px) {
+    width: 60vw;
+  }
+
+  @media (min-width: 1920px) {
+    width: 40vw;
+  }
 `
 
 // ################### Header ###################
@@ -73,6 +81,16 @@ export const Container = styled.div`
     flex-direction: row;
     justify-content: space-evenly;
     width: 100vw;
+  }
+
+  @media (min-width: 1366px) {
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100vw;
+  }
+
+  @media (min-width: 1920px) {
+    width: 50vw;
   }
 `
 
@@ -138,7 +156,7 @@ export const Paragraph = styled.p`
 
 export const SyledParSection = styled(StyledSection)`
   display: block;
-  height: 20vh;
+  height: 30vh;
 `
 export const StyledParallax = styled(Parallax)`
   height: 100%;
@@ -163,11 +181,19 @@ export const SmallCard = styled.div`
   background-size: cover;
   border-radius: 2px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+  @media (min-width: 1366px) {
+    width: 40vw;
+  }
 `
 
 export const StyledA = styled.a`
   text-decoration: none;
   margin: 5vw 0vw;
+
+  @media (min-width: 768px) {
+    margin: 2vw 0vw;
+  }
 `
 
 // ################### Contact Form ###################
@@ -188,6 +214,10 @@ export const Input = styled.input`
   padding: 0.7rem 0rem 0.7rem 0.7rem;
   font-size: 1rem;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+  @media (min-width: 1366px) {
+    width: 30vw;
+  }
 `
 
 export const Textarea = styled.textarea`
@@ -200,6 +230,10 @@ export const Textarea = styled.textarea`
   font-size: 1rem;
   padding: 0.7rem 0rem 0.7rem 0.7rem;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+  @media (min-width: 1366px) {
+    width: 30vw;
+  }
 `
 
 export const Button = styled.button`
@@ -214,11 +248,19 @@ export const FormContainer = styled.div`
   justify-content: space-between;
   // text-align: right;
   width: 80vw;
+
+  @media (min-width: 1366px) {
+    width: 30vw;
+  }
 `
 
 export const StyledLabel = styled.label`
   text-align: left;
   width: 80vw;
+
+  @media (min-width: 1366px) {
+    width: 30vw;
+  }
 `
 
 
@@ -227,7 +269,12 @@ export const StyledLabel = styled.label`
 export const BtnContainer = styled.div`
   display: flex;
   flex-direction: ${props => props.direction || 'column'};
-  align-items: center;
+  // align-items: center;
+
+  @media (min-width: 1366px) {
+    // align-items: start;
+    width: 60vw;
+  }
 `
 
 export const Btn = styled.button`
@@ -243,6 +290,10 @@ export const Btn = styled.button`
 
   &:hover {
     background-color: #DC9E82;
+  }
+
+  @media (min-width: 1366px) {
+    width: 20vw;
   }
 `
 
