@@ -1,12 +1,12 @@
 import React from 'react'
-import { AuthorSection, HorizontalLine, StyledText, SectionTitleContainer } from './style'
-import { Container, Card, UpperContainer, LowerContainer, ImageContainer, Image, StyledH3, StyledH2, Paragraph } from './style'
+import { SupportSection, HorizontalLine, StyledText, SectionTitleContainer } from './style'
+import { BioContainer, BioCard, UpperContainer, LowerContainer, ImageContainer, BioImage, StyledH3, StyledH2, Paragraph } from './style'
 import data from './author.json'
 
 
 export const Author = () => {
   return (
-    <AuthorSection>
+    <SupportSection>
 
       <SectionTitleContainer>
         <HorizontalLine />
@@ -14,13 +14,13 @@ export const Author = () => {
         <HorizontalLine />
       </SectionTitleContainer>
 
-      <Container>
+      <BioContainer>
         {data.map( (item ) => {
             return (
-              <Card key={item.name}>
+              <BioCard key={item.name}>
                 <UpperContainer bg={item.bg}>
                   <ImageContainer>
-                    <Image src={item.img} />
+                    <BioImage src={item.img} />
                   </ImageContainer>
                 </UpperContainer>
                 <LowerContainer>
@@ -30,11 +30,11 @@ export const Author = () => {
                     {item.bio}
                   </Paragraph>
                 </LowerContainer>
-              </Card>
+              </BioCard>
             )
           })}
-      </Container>
+      </BioContainer>
 
-    </AuthorSection>
+    </SupportSection>
   )
 }

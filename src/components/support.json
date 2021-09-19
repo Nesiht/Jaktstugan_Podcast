@@ -3,14 +3,14 @@
     "title": "Webshop",
     "img": "../assets/img/social_media/shopping-cart.svg",
     "linkUrl": "https://google.se",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget dui a turpis ornare dignissim id porta sem. Donec venenatis.",
+    "description": "Spana in de senaste produkterna i vår webshop, perfekt till jakten eller som gåva.",
     "visible": true
   },
   {
     "title": "Patreon",
     "img": "../assets/img/social_media/patreon.svg",
     "linkUrl": "https://www.patreon.com/jaktstuganpodcast",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget dui a turpis ornare dignissim id porta sem. Donec venenatis.",
+    "description": "Bli medlem och få information och extramaterial exlusivt före alla andra.",
     "visible": true
   },
   {
@@ -24,14 +24,14 @@
     "title": "Instagram",
     "img": "../assets/img/social_media/005-instagram.svg",
     "linkUrl": "https://www.instagram.com/jaktstugan_podcast/",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget dui a turpis ornare dignissim id porta sem. Donec venenatis.",
+    "description": "Följ oss på instagram, se unikt bildmaterial och läs vad senaste avsnittet handlar om.",
     "visible": true
   },
   {
     "title": "Youtube",
     "img": "../assets/img/social_media/038-youtube.svg",
     "linkUrl": "https://www.youtube.com/channel/UCNMonXt7HrttYvqcZGGiBUg",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget dui a turpis ornare dignissim id porta sem. Donec venenatis.",
+    "description": "Titta gärna på våra videos, Youtube är en plattform som vi kommer satsa mer på framöver.",
     "visible": true
   }
 ]

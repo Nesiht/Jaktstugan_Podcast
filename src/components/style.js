@@ -51,6 +51,9 @@ export const StyledSection = styled.div`
   justify-content: space-evenly;
   height: 100vh;
 `
+export const SupportSection = styled(StyledSection)`
+  height: auto;
+`
 
 export const SectionTitleContainer = styled.div`
   margin: 4vh 0vh;
@@ -89,11 +92,7 @@ export const Logo = styled.img`
 
 // ################### Author ###################
 
-export const AuthorSection = styled(StyledSection)`
-  height: auto;
-`
-
-export const Container = styled.div`
+export const BioContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -115,7 +114,7 @@ export const Container = styled.div`
   }
 `
 
-export const Card = styled.div`
+export const BioCard = styled.div`
   display: flex;
   flex-direction: column;
   width: 300px;
@@ -152,7 +151,7 @@ export const ImageContainer = styled.div`
   overflow: hidden;
 `
 
-export const Image = styled.img`
+export const BioImage = styled.img`
   width: 100%;
   height: auto;
 `
@@ -171,29 +170,80 @@ export const StyledParallax = styled(Parallax)`
   height: 100%;
 `
 
-// ################### Linksection ###################
+// ################### Linktree ###################
 
-export const SupportSection = styled(StyledSection)`
-  height: auto;
+export const StyledCard = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 30vh;
+  width: 80vw;
+  border-radius: 8px;
+  box-shadow: 0 13px 27px -5px rgb(50 50 93 / 25%), 0 8px 16px -8px rgb(0 0 0 / 30%), 0 -6px 16px -6px rgb(0 0 0 / 3%);
+
+  &:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+  }
+
+  @media (min-width: 768px) {
+    height: 20vh;
+    width: 80vw;
+  }
+
+  @media (min-width: 1024px) {
+  }
+
+  @media (min-width: 1366px) {
+    width: 60vw;
+  }
+
+  @media (min-width: 1920px) {
+    width: 40vw;
+  }
 `
 
-export const SmallCard = styled.div`
-  height: 12vh;
-  width: 70vw;
+export const StyledCardLeft = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 20vw;
+  overflow: hidden;
+`
+
+export const StyledCardImg = styled.img`
+  position: relative;
+  overlfow: hidden;
+  width: 30vw;
+  transform: translate(-25px, 0px);
+
+  @media (min-width: 768px) {
+    width: 15vw;
+  }
+
+  @media (min-width: 1024px) {
+  }
+
+  @media (min-width: 1366px) {
+    width: 10vw;
+  }
+
+  @media (min-width: 1920px) {
+    width: 5vw;
+  }
+`
+
+export const StyledCardRight = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  background-image: url(${props => props.bg || 'none'});
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  border-radius: 2px;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-
-  @media (min-width: 1366px) {
-    width: 40vw;
-  }
+  height: 100%;
+  width: 100%;
 `
 
 export const StyledA = styled.a`
@@ -396,48 +446,3 @@ export const Btn = styled.button`
 
 
 // ################### END ###################
-
-
-
-export const StyledCard = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  height: 30vh;
-  width: 80vw;
-  border-radius: 8px;
-  margin: 4vh;
-  box-shadow: 0 13px 27px -5px rgb(50 50 93 / 25%), 0 8px 16px -8px rgb(0 0 0 / 30%), 0 -6px 16px -6px rgb(0 0 0 / 3%);
-  // background-image: linear-gradient(to left bottom, #607466, #53665d, #475953, #3d4b48, #343e3d);
-`
-
-export const StyledCardLeft = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 20vw;
-  overflow: hidden;
-`
-
-export const StyledCardImg = styled.img`
-  position: relative;
-  // left: -10px;
-  overlfow: hidden;
-  width: 30vw;
-  transform: translate(-25px, 0px);
-`
-
-export const StyledCardRight = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  
-`
-
-
-
