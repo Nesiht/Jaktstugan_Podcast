@@ -21,7 +21,7 @@ export const Partners = (props) => {
                 <PartnerImg src={item.img} />
               </StyledA>
               <Paragraph>{item.bio}</Paragraph>
-                <StyledText><StyledA href={item.linkUrl} target="_blank" key={item.title} rel="noopener">Läs mer om {item.title}.</StyledA></StyledText>
+                <StyledText spaceing="0.3vw"><StyledA href={item.linkUrl} target="_blank" key={item.title} rel="noopener">Läs mer om {item.title}.</StyledA></StyledText>
             </PartnerCard>
           )
         } else { return null }

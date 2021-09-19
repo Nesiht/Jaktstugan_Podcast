@@ -7,12 +7,16 @@ import { Parallax } from 'react-parallax'
 
 export const StyledText = styled.p`
   font-family: 'Bodoni Moda', serif;
-  letter-spacing: 1vw;
+  letter-spacing: ${props => props.spaceing || '1vw'};
   font-size: 1.1rem;
   color: ${props => props.color || 'white'};
   text-transform: uppercase;
   text-align: center;
   font-weight: 600;
+
+  @media (min-width: 1920px) {
+    letter-spacing: ${props => props.spaceing || '1vw'};
+  }
 `
 
 export const RegularText = styled.p`
@@ -197,6 +201,14 @@ export const StyledA = styled.a`
     color: #000;
   }
 
+  &:active {
+    color: #000;
+  }
+
+  &:link {
+    color: #000;
+  }
+
   @media (min-width: 768px) {
     margin: 2vw 0vw;
   }
@@ -211,6 +223,10 @@ export const PartnerContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: 1920px) {
+    flex-direction: row;
+  }
 `
 
 export const PartnerCard = styled.div`
@@ -227,7 +243,8 @@ export const PartnerCard = styled.div`
   }
 
   @media (min-width: 1920px) {
-    width: 40vw;
+    width: 20vw;
+    // background-color: green;
   }
 `
 
