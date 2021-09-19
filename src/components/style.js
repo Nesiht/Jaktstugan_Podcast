@@ -422,8 +422,8 @@ export const StyledCardLeft = styled.div`
 `
 
 export const StyledCardImg = styled.img`
-  position: aboslute;
-  left: 30px;
+  position: relative;
+  // left: -10px;
   overlfow: hidden;
   width: 30vw;
   transform: translate(-25px, 0px);
