@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import headerBg from '../img/_MGF2188_L.webp'
+import headerBg from '../img/_MGF2188_M.webp'
 import { Parallax } from 'react-parallax'
 
 

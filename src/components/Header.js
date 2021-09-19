@@ -11,7 +11,7 @@ export const Header = () => {
 
       <SectionTitleContainer>
         <HorizontalLine />
-          <StyledText >En podcast för alla jägare.</StyledText>
+          <StyledText>En podcast för alla jägare.</StyledText>
         <HorizontalLine />
       </SectionTitleContainer>
       

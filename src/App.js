@@ -18,7 +18,6 @@ export const App = () => {
       <ParallaxSection img='./assets/img/Varpsund2542_O.webp' />
       <Linksection title="Stöd podden." data={supportData}/>
       <Linksection title="Lyssna på podden." data={listenData}/>
-      {/* <Linksection title="Partners." data={partnerData}/> */}
       <Partners title="Partners." data={partnerData} />
       <ParallaxSection img='./assets/img/_MGF2156_L.webp' />
       <Contact />
