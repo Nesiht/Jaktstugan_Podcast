@@ -29,10 +29,13 @@ export const Paragraph = styled.p`
   margin: 0px 15px;
   font-family: "Lato", sans-serif;
   line-height: 1.5;
+  text-transform: ${props => props.transform ||'none'};
 `
 
 export const StyledH3 = styled.h3`
   font-family: "Lato", sans-serif;
+  text-transform: ${props => props.transform ||'none'};
+
 `
 
 export const StyledH2 = styled.h2`
@@ -117,7 +120,7 @@ export const Card = styled.div`
   flex-direction: column;
   width: 300px;
   background-color: white;
-  box-shadow: 0px 1px 10px 1px black;
+  box-shadow: 0 13px 27px -5px rgb(50 50 93 / 25%), 0 8px 16px -8px rgb(0 0 0 / 30%), 0 -6px 16px -6px rgb(0 0 0 / 3%);
   border-radius: 8px;
   margin: 4vh 0vh;
 `
@@ -244,7 +247,6 @@ export const PartnerCard = styled.div`
 
   @media (min-width: 1920px) {
     width: 20vw;
-    // background-color: green;
   }
 `
 
@@ -397,7 +399,45 @@ export const Btn = styled.button`
 
 
 
+export const StyledCard = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 30vh;
+  width: 80vw;
+  border-radius: 8px;
+  margin: 4vh;
+  box-shadow: 0 13px 27px -5px rgb(50 50 93 / 25%), 0 8px 16px -8px rgb(0 0 0 / 30%), 0 -6px 16px -6px rgb(0 0 0 / 3%);
+  // background-image: linear-gradient(to left bottom, #607466, #53665d, #475953, #3d4b48, #343e3d);
+`
 
+export const StyledCardLeft = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 20vw;
+  overflow: hidden;
+`
+
+export const StyledCardImg = styled.img`
+  position: aboslute;
+  left: 30px;
+  overlfow: hidden;
+  width: 30vw;
+  transform: translate(-25px, 0px);
+`
+
+export const StyledCardRight = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  
+`
 
 
 
