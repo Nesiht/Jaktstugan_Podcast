@@ -2,7 +2,7 @@ import './App.css';
 import { Header } from './components/Header'
 import { Author } from './components/Author'
 import { Contact } from './components/Contact'
-import { Linksection } from './components/Linksection'
+// import { Linksection } from './components/Linksection'
 import { ParallaxSection } from './components/ParallaxSection'
 import { Partners } from './components/Partners.js'
 
