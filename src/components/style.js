@@ -21,6 +21,12 @@ export const RegularText = styled.p`
   text-align: center;
 `
 
+export const Paragraph = styled.p`
+  margin: 0px 15px;
+  font-family: "Lato", sans-serif;
+  line-height: 1.5;
+`
+
 // ################### * ###################
 
 export const StyledSection = styled.div`
@@ -146,11 +152,7 @@ export const StyledH2 = styled.h2`
   font-family: "Mate SC", serif;
 `
 
-export const Paragraph = styled.p`
-  margin: 0px 15px;
-  font-family: "Lato", sans-serif;
-  line-height: 1.5;
-`
+
 
 // ################### Parallax ###################
 
@@ -198,6 +200,34 @@ export const StyledA = styled.a`
   @media (min-width: 768px) {
     margin: 2vw 0vw;
   }
+`
+
+// ################### Partners ###################
+
+export const PartnerContainer = styled.div`
+  display: flex;
+  height: auto;
+  width: 80vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // background-color: green;
+`
+
+export const PartnerCard = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  width: 100%;
+  text-align: center;
+  margin-bottom: 3vh;
+`
+
+export const PartnerImg = styled.img`
+  width: 60vw;
+  background-size: cover;
+  filter: drop-shadow(0 0 0.75rem white);
 `
 
 // ################### Contact Form ###################

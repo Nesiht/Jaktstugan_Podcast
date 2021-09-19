@@ -1,14 +1,14 @@
 [
   {
     "title": "Spotify",
-    "img": "../assets/img/nature_1.jpg",
+    "img": "../assets/img/nature_1.webp",
     "linkUrl": "https://open.spotify.com/show/1I7sB6okWbjCJJv4H5jRuD",
     "description": "Information about said link",
     "visible": true    
   },
   {
     "title": "Soundcloud",
-    "img": "../assets/img/nature_3.jpg",
+    "img": "../assets/img/nature_3.webp",
     "linkUrl": "https://soundcloud.com/rickard-kuhs-thorstroem",
     "description": "Information about said link",
     "visible": true    

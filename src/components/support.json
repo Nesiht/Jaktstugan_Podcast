@@ -1,31 +1,31 @@
 [
   {
     "title": "Webshop",
-    "img": "../assets/img/nature_1.jpg",
+    "img": "../assets/img/nature_1.webp",
     "linkUrl": "https://google.se",
     "visible": true
   },
   {
     "title": "Patreon",
-    "img": "../assets/img/nature_2.jpg",
+    "img": "../assets/img/nature_2.webp",
     "linkUrl": "https://www.patreon.com/jaktstuganpodcast",
     "visible": true
   },
   {
     "title": "Swish",
-    "img": "../assets/img/nature_3.jpg",
+    "img": "../assets/img/nature_3.webp",
     "linkUrl": "https://google.se",
     "visible": false
   },
   {
     "title": "Instagram",
-    "img": "../assets/img/nature_3.jpg",
+    "img": "../assets/img/nature_3.webp",
     "linkUrl": "https://www.instagram.com/jaktstugan_podcast/",
     "visible": true
   },
   {
     "title": "Youtube",
-    "img": "../assets/img/nature_4.jpg",
+    "img": "../assets/img/nature_4.webp",
     "linkUrl": "https://www.youtube.com/channel/UCNMonXt7HrttYvqcZGGiBUg",
     "visible": true
   }

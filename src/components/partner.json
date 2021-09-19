@@ -1,14 +1,16 @@
 [
   {
-    "title": "Remsle",
-    "img": "../assets/img/nature_5.jpg",
+    "title": "Remsle of Sweden",
+    "img": "../assets/img/remsle-of-sweden-small.png",
     "linkUrl": "https://remsle.com/",
+    "bio": "Remsle of Sweden är resultatet av drygt 20 års vänskap, tusentals timmar av tester och utveckling samt en kärlek till naturen. Allt detta omslutet av en stark övertygelse om att funktionskläder med hög kvalitet och komfort skall kunna köpas av alla.",
     "visible": true
   },
   {
     "title": "BOAR CANDY",
-    "img": "../assets/img/nature_3.jpg",
+    "img": "../assets/img/hq1.webp",
     "linkUrl": "https://boarcandy.se/",
+    "bio": "Vi tillverkar lockmedel för vildsvin och hjortdjur. Vildsvinsstammen ökar stadigt och skadorna på grödor/fält är omfattande. Nu har vi tagit fram ett lockmedel som inte bara lockar in vildsvinen på din åtel eller foderplats. De stannar även längre, vilket betyder mindre åverkan på jordbruket!",
     "visible": true
   }
 ]

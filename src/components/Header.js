@@ -1,6 +1,6 @@
 import React from 'react'
 import { StyledHeader, Logo, HorizontalLine, StyledText, BtnContainer, SectionTitleContainer } from './style'
-import LogoSrc from '../img/JS_Logo_Transparent.png'
+import LogoSrc from '../img/JS_Logo_Transparent.webp'
 import { Button } from './Button'
 
 
