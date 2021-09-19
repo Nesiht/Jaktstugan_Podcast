@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import headerBg from '../img/_MGF2156_L.webp'
+import headerBg from '../img/_MGF2188_L.webp'
 import { Parallax } from 'react-parallax'
 
 
@@ -104,7 +104,7 @@ export const Container = styled.div`
   @media (min-width: 1366px) {
     flex-direction: row;
     justify-content: space-evenly;
-    width: 100vw;
+    width: 60vw;
   }
 
   @media (min-width: 1920px) {
