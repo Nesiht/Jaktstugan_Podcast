@@ -9,9 +9,9 @@ export const Header = () => {
     <StyledHeader>
       <Logo src={LogoSrc} alt="Jaktstugan Podcast logo" />
 
-      <SectionTitleContainer>
+      <SectionTitleContainer bgc="rgba(91, 91, 91, 0.9)">
         <HorizontalLine />
-          <StyledText>En podcast för alla jägare.</StyledText>
+          <StyledText>En podcast för alla jägare</StyledText>
         <HorizontalLine />
       </SectionTitleContainer>
       

@@ -57,6 +57,8 @@ export const SupportSection = styled(StyledSection)`
 
 export const SectionTitleContainer = styled.div`
   margin: 4vh 0vh;
+  padding: 1vw;
+  background-color: ${props => props.bgc || 'none'};
 `
 
 export const HorizontalLine = styled.hr`
