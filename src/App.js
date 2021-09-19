@@ -15,11 +15,11 @@ export const App = () => {
     <>
       <Header />
       <Author />
-      <ParallaxSection img='./assets/img/Varpsund2542_O.webp' />
+      <ParallaxSection img='./assets/img/Varpsund2542_M.webp' alt="Rickard and Richard sitting next to eachother" />
       <Linktree title="Stöd podden." data={supportData} />
       <Linktree title="Lyssna på podden." data={listenData} />
       <Partners title="Partners." data={partnerData} />
-      <ParallaxSection img='./assets/img/_MGF2156_L.webp' />
+      <ParallaxSection img='./assets/img/_MGF2156_L.webp' alt="Mixer table and animal horn placed on table" />
       <Contact />
     </>
   );

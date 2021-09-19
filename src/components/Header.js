@@ -7,7 +7,7 @@ import { Button } from './Button'
 export const Header = () => {
   return (
     <StyledHeader>
-      <Logo src={LogoSrc} />
+      <Logo src={LogoSrc} alt="Jaktstugan Podcast logo" />
 
       <SectionTitleContainer>
         <HorizontalLine />

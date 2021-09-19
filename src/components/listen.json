@@ -2,6 +2,7 @@
   {
     "title": "Spotify",
     "img": "../assets/img/social_media/057-spotify.svg",
+    "alt": "Spotify logo",
     "linkUrl": "https://open.spotify.com/show/1I7sB6okWbjCJJv4H5jRuD",
     "description": "Har du konto? Lyssna gärna via Spotify, enkelt, smidigt och du stöttar samtidigt podden.",
     "visible": true    
@@ -9,6 +10,7 @@
   {
     "title": "Soundcloud",
     "img": "../assets/img/social_media/054-soundcloud.svg",
+    "alt": "Soundcloud logo",
     "linkUrl": "https://soundcloud.com/rickard-kuhs-thorstroem",
     "description": "Vill du att någon annan ska få veta om oss? våra avsnitt på soundclud kan alla lyssna på!",
     "visible": true    

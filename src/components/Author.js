@@ -20,7 +20,7 @@ export const Author = () => {
               <BioCard key={item.name}>
                 <UpperContainer bg={item.bg}>
                   <ImageContainer>
-                    <BioImage src={item.img} />
+                    <BioImage src={item.img} alt={item.alt} />
                   </ImageContainer>
                 </UpperContainer>
                 <LowerContainer>

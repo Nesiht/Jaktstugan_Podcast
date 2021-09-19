@@ -20,7 +20,7 @@ export const Linktree = (props) => {
               <StyledCard>
 
                 <StyledCardLeft>
-                  <StyledCardImg src={item.img} />
+                  <StyledCardImg src={item.img} alt={item.alt} />
                 </StyledCardLeft>
 
                 <StyledCardRight>

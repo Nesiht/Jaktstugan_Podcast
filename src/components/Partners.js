@@ -18,7 +18,7 @@ export const Partners = (props) => {
           return (
             <PartnerCard>
               <StyledA href={item.linkUrl} target="_blank" key={item.title} rel="noopener">
-                <PartnerImg src={item.img} />
+                <PartnerImg src={item.img} alt={item.alt} />
               </StyledA>
               <Paragraph>{item.bio}</Paragraph>
                 <StyledText spaceing="0.3vw"><StyledA href={item.linkUrl} target="_blank" key={item.title} rel="noopener">Läs mer om {item.title}.</StyledA></StyledText>

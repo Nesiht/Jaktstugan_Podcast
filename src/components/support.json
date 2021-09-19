@@ -2,6 +2,7 @@
   {
     "title": "Webshop",
     "img": "../assets/img/social_media/shopping-cart.svg",
+    "alt": "Shopping cart logo, link to Jaktstugan websop",
     "linkUrl": "https://google.se",
     "description": "Spana in de senaste produkterna i vår webshop, perfekt till jakten eller som gåva.",
     "visible": true
@@ -9,6 +10,7 @@
   {
     "title": "Patreon",
     "img": "../assets/img/social_media/patreon.svg",
+    "alt": "Patreon logo, link to Jaktstugan Patreon",
     "linkUrl": "https://www.patreon.com/jaktstuganpodcast",
     "description": "Bli medlem och få information och extramaterial exlusivt före alla andra.",
     "visible": true
@@ -16,6 +18,7 @@
   {
     "title": "Swish",
     "img": "../assets/img/nature_3.webp",
+    "alt": "Swish logo",
     "linkUrl": "https://google.se",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget dui a turpis ornare dignissim id porta sem. Donec venenatis.",
     "visible": false
@@ -23,6 +26,7 @@
   {
     "title": "Instagram",
     "img": "../assets/img/social_media/005-instagram.svg",
+    "alt": "Instagram logo, link to Jaktstugan Instagram",
     "linkUrl": "https://www.instagram.com/jaktstugan_podcast/",
     "description": "Följ oss på instagram, se unikt bildmaterial och läs vad senaste avsnittet handlar om.",
     "visible": true
@@ -30,6 +34,7 @@
   {
     "title": "Youtube",
     "img": "../assets/img/social_media/038-youtube.svg",
+    "alt": "Youtube logo, link to Jaktstugan Youtube",
     "linkUrl": "https://www.youtube.com/channel/UCNMonXt7HrttYvqcZGGiBUg",
     "description": "Titta gärna på våra videos, Youtube är en plattform som vi kommer satsa mer på framöver.",
     "visible": true
