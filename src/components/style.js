@@ -27,6 +27,14 @@ export const Paragraph = styled.p`
   line-height: 1.5;
 `
 
+export const StyledH3 = styled.h3`
+  font-family: "Lato", sans-serif;
+`
+
+export const StyledH2 = styled.h2`
+  font-family: "Mate SC", serif;
+`
+
 // ################### * ###################
 
 export const StyledSection = styled.div`
@@ -112,7 +120,6 @@ export const Card = styled.div`
 
 export const UpperContainer = styled.div`
   height: 100px;
-  // background: linear-gradient(to left, #607466, #343e3d);
   border-radius: 8px 8px 0px 0px;
 
   background-image: url(${props => props.bg || 'none'});
@@ -132,7 +139,6 @@ export const ImageContainer = styled.div`
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  // padding: 5px;
   transform: translate(90px, 35px);
   border: 2px solid #fff;
   box-sizing: content-box;
@@ -143,16 +149,6 @@ export const Image = styled.img`
   width: 100%;
   height: auto;
 `
-
-export const StyledH3 = styled.h3`
-  font-family: "Lato", sans-serif;
-`
-
-export const StyledH2 = styled.h2`
-  font-family: "Mate SC", serif;
-`
-
-
 
 // ################### Parallax ###################
 
@@ -197,6 +193,10 @@ export const StyledA = styled.a`
   text-decoration: none;
   margin: 5vw 0vw;
 
+  &:visited {
+    color: #000;
+  }
+
   @media (min-width: 768px) {
     margin: 2vw 0vw;
   }
@@ -211,7 +211,6 @@ export const PartnerContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  // background-color: green;
 `
 
 export const PartnerCard = styled.div`
@@ -222,12 +221,32 @@ export const PartnerCard = styled.div`
   width: 100%;
   text-align: center;
   margin-bottom: 3vh;
+
+  @media (min-width: 1366px) {
+    width: 60vw;
+  }
+
+  @media (min-width: 1920px) {
+    width: 40vw;
+  }
 `
 
 export const PartnerImg = styled.img`
   width: 60vw;
   background-size: cover;
   filter: drop-shadow(0 0 0.75rem white);
+
+  @media (min-width: 768px) {
+    width: 30vw;
+  }
+
+  @media (min-width: 1366px) {
+    width: 20vw;
+  }
+
+  @media (min-width: 1920px) {
+    width: 15vw;
+  }
 `
 
 // ################### Contact Form ###################
@@ -280,7 +299,6 @@ export const FormContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  // text-align: right;
   width: 80vw;
 
   @media (min-width: 1366px) {
@@ -303,10 +321,8 @@ export const StyledLabel = styled.label`
 export const BtnContainer = styled.div`
   display: flex;
   flex-direction: ${props => props.direction || 'column'};
-  // align-items: center;
 
   @media (min-width: 1366px) {
-    // align-items: start;
     width: 60vw;
   }
 `
