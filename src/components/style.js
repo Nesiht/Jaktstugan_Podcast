@@ -257,6 +257,10 @@ export const PartnerImg = styled.img`
     width: 30vw;
   }
 
+  @media (min-width: 1024px) {
+    width: 20vw;
+  }
+
   @media (min-width: 1366px) {
     width: 20vw;
   }
@@ -284,6 +288,10 @@ export const Input = styled.input`
   padding: 0.7rem 0rem 0.7rem 0.7rem;
   font-size: 1rem;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  
+  @media (min-width: 1024px) {
+    width: 40vw;
+  }
 
   @media (min-width: 1366px) {
     width: 30vw;
@@ -300,6 +308,10 @@ export const Textarea = styled.textarea`
   font-size: 1rem;
   padding: 0.7rem 0rem 0.7rem 0.7rem;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+  @media (min-width: 1024px) {
+    width: 40vw;
+  }
 
   @media (min-width: 1366px) {
     width: 30vw;
@@ -318,6 +330,10 @@ export const FormContainer = styled.div`
   justify-content: space-between;
   width: 80vw;
 
+  @media (min-width: 1024px) {
+    width: 40vw;
+  }
+
   @media (min-width: 1366px) {
     width: 30vw;
   }
@@ -326,6 +342,10 @@ export const FormContainer = styled.div`
 export const StyledLabel = styled.label`
   text-align: left;
   width: 80vw;
+  
+  @media (min-width: 1024px) {
+    width: 40vw;
+  }
 
   @media (min-width: 1366px) {
     width: 30vw;
@@ -338,6 +358,10 @@ export const StyledLabel = styled.label`
 export const BtnContainer = styled.div`
   display: flex;
   flex-direction: ${props => props.direction || 'column'};
+
+  @media (min-width: 1024px) {
+    width: 60vw;
+  }
 
   @media (min-width: 1366px) {
     width: 60vw;
@@ -357,6 +381,10 @@ export const Btn = styled.button`
 
   &:hover {
     background-color: #DC9E82;
+  }
+
+  @media (min-width: 1024px) {
+    width: 30vw;
   }
 
   @media (min-width: 1366px) {
