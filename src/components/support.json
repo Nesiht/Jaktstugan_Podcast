@@ -38,5 +38,13 @@
     "linkUrl": "https://www.youtube.com/channel/UCNMonXt7HrttYvqcZGGiBUg",
     "description": "Titta gärna på våra videos, Youtube är en plattform som vi kommer satsa mer på framöver.",
     "visible": true
+  },
+  {
+    "title": "Guldpodden",
+    "img": "../assets/img/",
+    "alt": "Guldpodden, link to Guldpodden",
+    "linkUrl": "https://www.guldpodden.se/nominera",
+    "description": "Vi skulle bli jätteglada om ni tar er tiden att lägga er röst på oss som årets podd!",
+    "visible": true
   }
 ]
