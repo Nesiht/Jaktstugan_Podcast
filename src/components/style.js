@@ -12,7 +12,7 @@ export const StyledText = styled.p`
   color: ${props => props.color || 'white'};
   text-transform: uppercase;
   text-align: center;
-  font-weight: 600;
+  font-weight: 800;
 
   @media (min-width: 1920px) {
     letter-spacing: ${props => props.spaceing || '1vw'};
