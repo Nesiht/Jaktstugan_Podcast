@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import { send } from 'emailjs-com'
 import ReCAPTCHA from 'react-google-recaptcha'
-import { Form, Input, Textarea, FormContainer, StyledLabel, HorizontalLine, StyledText, SectionTitleContainer } from './style'
-import { Button } from './Button'
+import { Form, Input, Textarea, FormContainer, StyledLabel, HorizontalLine, StyledText, SectionTitleContainer, Btn } from './style'
 require('dotenv').config()
 
 export const Contact = () => {
@@ -11,7 +10,8 @@ export const Contact = () => {
     email: '',
     message: '',
   })
-  const [emailSent, setEmailSent] =useState(false)
+  const [emailSent, setEmailSent] = useState(false)
+  const [disableBtn, setdisableBtn] = useState(true)
 
 
   const handleSubmit = (event) => {
@@ -41,14 +41,14 @@ export const Contact = () => {
   }
 
   const handleCaptcha = (value) => {
-    console.log("captcha value:", value)
+    setdisableBtn(!disableBtn)
   }
 
 
   return (
     <>
     {!emailSent && 
-    <Form onSubmit={(e) => handleSubmit(e)}>
+    <Form onSubmit={(event) => handleSubmit(event)}>
 
       <SectionTitleContainer>
         <HorizontalLine />
@@ -64,7 +64,7 @@ export const Contact = () => {
         type="text"
         onChange={handleChange}
         required
-      ></Input>
+      />
 
       <StyledLabel htmlFor="email">Epost</StyledLabel>
       <Input
@@ -72,9 +72,9 @@ export const Contact = () => {
         name="email"
         placeholder="Epost"
         type="email"
-        onChange={handleChange}
         required
-      ></Input>
+        onChange={handleChange}
+      />
       
       <FormContainer>
         <StyledLabel htmlFor="message">Meddelande</StyledLabel>
@@ -89,16 +89,16 @@ export const Contact = () => {
         onChange={handleChange}
         required
         maxLength="200"
-      ></Textarea>
+      />
 
       <ReCAPTCHA
         sitekey={process.env.REACT_APP_SITE_KEY}
         onChange={handleCaptcha}
       />
 
-      <Button title='Skicka' bg='#343E3D' type="submit">
-        Skicka
-      </Button>
+      <Btn title='Skicka' bg='#343E3D' type="submit" disabled={disableBtn} >
+        <StyledText>Skicka</StyledText>
+      </Btn>
 
     </Form>    
     }

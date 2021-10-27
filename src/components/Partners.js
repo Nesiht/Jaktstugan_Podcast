@@ -16,7 +16,7 @@ export const Partners = (props) => {
         {props.data.map(item => {
         if ( item.visible ) {
           return (
-            <PartnerCard>
+            <PartnerCard key={item.title}>
               <StyledA href={item.linkUrl} target="_blank" key={item.title} rel="noopener">
                 <PartnerImg src={item.img} alt={item.alt} />
               </StyledA>

@@ -433,6 +433,11 @@ export const Btn = styled.button`
   width: 80vw;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 
+  ${({ disabled }) => disabled && `
+    background: palevioletred;
+    opacity: 0.2;
+  `}
+
   &:hover {
     background-color: #DC9E82;
   }
@@ -444,6 +449,8 @@ export const Btn = styled.button`
   @media (min-width: 1366px) {
     width: 20vw;
   }
+
+
 `
 
 
