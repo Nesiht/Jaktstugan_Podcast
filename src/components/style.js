@@ -167,10 +167,13 @@ export const SyledParSection = styled(StyledSection)`
   @media (min-width: 1920px) {
     height: 40vh;
   }
+
 `
 export const StyledParallax = styled(Parallax)`
   height: 100%;
+
 `
+
 
 // ################### Linktree ###################
 

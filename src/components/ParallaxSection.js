@@ -6,7 +6,8 @@ export const ParallaxSection = (props) => {
   return (
     <SyledParSection>
       <StyledParallax bgImage={props.img} bgImageAlt={props.alt}
-        strength={-300} />
+        strength={-300}> 
+        </StyledParallax>
     </SyledParSection>
   )
 }
